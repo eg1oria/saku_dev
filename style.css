@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Global */
 /* ---------------------------------- */
 @font-face {
@@ -72,6 +73,7 @@ ul {
   padding: 20px 0;
   top: 0;
   left: 0;
+  z-index: 100;
 }
 .header__content {
   display: flex;
@@ -138,32 +140,21 @@ ul {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
-.header__phone {
+.header__contact {
   color: #1d252d;
   border-radius: 20px;
-  text-decoration: none;
-  font-weight: 400;
+  cursor: pointer;
+  padding: 10px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-.header__phone:hover {
-  cursor: pointer;
-  text-decoration: underline;
 }
 .header__contacts-item {
   border-radius: 50%;
-  padding: 10px;
 }
-.header__contacts-item:hover {
+.header__contact:hover {
   background-color: rgba(220, 220, 220, 0.479);
-}
-.header__phone-icon {
-  color: rgb(0, 0, 0);
-  justify-content: center;
-  align-items: center;
 }
 .header__menu {
   width: 25%;
@@ -188,4 +179,54 @@ ul {
   opacity: 1;
   transform: translateX(0);
   pointer-events: auto;
+}
+
+.intro {
+  min-height: 100vh;
+  /* занимает минимум весь экран */
+  width: 100%;
+  /* высота окна браузера */
+  display: flex;
+  /* выравнивание содержимого по центру */
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(120deg, #5A58DD, #2DB1E6);
+  position: relative;
+}
+.intro__content-title {
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+  margin: 0;
+  font-size: 40px;
+  color: white;
+}
+.intro__text {
+  position: absolute;
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+.intro__text-1 {
+  top: 220px;
+  left: 250px;
+}
+.intro__text-2 {
+  top: 180px;
+  left: 50%;
+}
+.intro__text-3 {
+  top: 250px;
+  right: 200px;
+}
+.intro__text-4 {
+  top: 500px;
+  right: 300px;
+}
+.intro__text-5 {
+  bottom: 150px;
+  right: 600px;
+}
+.intro__text-6 {
+  bottom: 230px;
+  left: 140px;
 }/*# sourceMappingURL=style.css.map */

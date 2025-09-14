@@ -1,0 +1,57 @@
+.intro {
+    min-height: 100vh;
+    /* занимает минимум весь экран */
+    width: 100%;
+    /* высота окна браузера */
+    display: flex;
+    /* выравнивание содержимого по центру */
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg, #5A58DD, #2DB1E6);
+    position: relative;
+
+    &__content-title {
+        font-family: Inter, sans-serif;
+        font-weight: bold;
+        margin: 0;
+        font-size: 40px;
+        color: white;
+    }
+
+    &__text {
+        position: absolute;
+        margin: 0;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    &__text-1 {
+        top: 220px;
+        left: 250px;
+    }
+
+    &__text-2 {
+        top: 180px;
+        left: 50%;
+    }
+
+    &__text-3 {
+        top: 250px;
+        right: 200px;
+    }
+
+    &__text-4 {
+        top: 500px;
+        right: 300px;
+    }
+
+    &__text-5 {
+        bottom: 150px;
+        right: 600px;
+    }
+    
+    &__text-6 {
+        bottom: 230px;
+        left: 140px;
+    }
+}
